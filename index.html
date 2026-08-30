@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIXEL ART</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>PIXEL ART</h1>
+        <p>Welcome to the Pixel Art website!<br>
+         Here you can create and share your<br>
+           own pixel art creations.</p>
+        <div class="controls">
+            <label for="colorPicker">Color:</label>
+            <input type="color" id="colorPicker">
+                <!-- <div id="Color Palette">    
+                    <button class="color-option" style="background-color: #FF0000;" data-color="#FF0000"></button>
+                    <button class="color-option" style="background-color: #00FF00;" data-color="#00FF00"></button>
+                    <button class="color-option" style="background-color: #0000FF;" data-color="#0000FF"></button>
+                    <button class="color-option" style="background-color: #FFFF00;" data-color="#FFFF00"></button>
+                    <button class="color-option" style="background-color: #e086cd;" data-color="#e086cd"></button>
+                    <button class="color-option" style="background-color: #00FFFF;" data-color="#00FFFF"></button>  
+                    <button class="color-option" style="background-color: #FFA500;" data-color="#FFA500"></button>
+                    <button class="color-option" style="background-color: #800080;" data-color="#800080"></button>
+                </div> -->
+
+            <label for="gridSize">Grid Size:</label>
+            <input type="number" id="gridSize" min="2" max="50" value="10">
+            <button id="createGrid">Create Grid</button>
+            <button id="clearGrid">Clear Grid</button>
+            <button id="erase">Erase</button>
+            <button id="downloadButton">Download</button>
+        </div>
+        <div id="pixelGrid" class="pixel-grid"></div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
